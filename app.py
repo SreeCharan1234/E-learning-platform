@@ -101,7 +101,7 @@ def login():
         user = Register.query.filter_by(email=email, password=password).first()
         if user:
             login_user(user)
-            '''def face():
+            def face():
 
                 def speak(str1):
                     speak = Dispatch("SAPI.SpVoice")
@@ -157,7 +157,7 @@ def login():
                         break
                 video.release()
                 cv2.destroyAllWindows()
-'''
+            face()
 
             return render_template("index.html")
 
